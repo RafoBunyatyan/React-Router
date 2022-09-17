@@ -8,10 +8,10 @@ const MainHeader = () => {
 			<nav>
 				<ul>
 					<li>
-						<NavLink className={classes.active} to='/welcome'>Welcome</NavLink>
+						<NavLink exact to='/welcome' activeClassName={classes.active}>Welcome</NavLink>
 					</li>
 					<li>
-						<NavLink className={classes.active} to='/products'>Products</NavLink>
+						<NavLink exact to='/products' activeClassName={classes.active}>Products</NavLink>
 					</li>
 				</ul>
 			</nav>
@@ -21,4 +21,4 @@ const MainHeader = () => {
 
 export default MainHeader
 
-// activeClassName
+// activeClassName, there is error!   (doesn't work like it should)
