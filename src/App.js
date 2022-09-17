@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import Welcome from './pages/Welcome';
 import Products from './pages/Products';
+import ProductDetail from './pages/ProductDetail';
 import MainHeader from './components/MainHeader';
 
 
@@ -11,8 +12,9 @@ function App() {
 			<MainHeader />
 			<main>
 				<Routes>
-					<Route path="/welcome" element={<Welcome />}></Route>
-					<Route path="/products" element={<Products />}></Route>
+					<Route path="/welcome" element={<Welcome />} />
+					<Route path="/products" element={<Products />} />
+					<Route path='/product-detail/:productId' element={<ProductDetail />} />
 				</Routes>
 			</main>
 		</div>
@@ -20,3 +22,7 @@ function App() {
 }
 
 export default App;
+
+// our-domain.com/welcome => Welcome Component
+// our-domain.com/products => Products Component
+// our-domain.com/product-detail/a-book  (any value=cankacat arjeq)
