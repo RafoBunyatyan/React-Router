@@ -12,7 +12,7 @@ function App() {
 			<main>
 				<Routes>
 					<Route path='/' exact >
-						{/* <Redirect to='/welcome' /> */}
+						{/* <Redirect to='/welcome' />  */}
 					</Route>
 					<Route path="/welcome" element={<Welcome />} />
 					<Route path="/products" element={<Products />} />
@@ -24,6 +24,8 @@ function App() {
 }
 
 export default App;
+
+// Redirect  there is error!   (doesn't work like it should)
 
 // our-domain.com/welcome => Welcome Component
 // our-domain.com/products => Products Component

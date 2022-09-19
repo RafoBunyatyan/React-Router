@@ -8,10 +8,10 @@ const MainHeader = () => {
 			<nav>
 				<ul>
 					<li>
-						<NavLink exact to='/welcome' activeClassName={classes.active}>Welcome</NavLink>
+						<NavLink to='/welcome' activeClassName={classes.active}>Welcome</NavLink>
 					</li>
 					<li>
-						<NavLink exact to='/products' activeClassName={classes.active}>Products</NavLink>
+						<NavLink to='/products' activeClassName={classes.active}>Products</NavLink>
 					</li>
 				</ul>
 			</nav>
